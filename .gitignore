@@ -1,0 +1,6 @@
+deps/*
+ebin/*
+.rebar/*
+ut/_build/*
+*.log
+test_file.txt

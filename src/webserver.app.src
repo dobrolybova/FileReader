@@ -1,0 +1,10 @@
+{application, webserver,
+ [
+  {description, "File reader web server (based on OTP 24)"},
+  {vsn, "1.0.0"},
+  {modules, ['file_reader_handler','webserver_app','webserver_sup']},
+  {registered, [webserver_sup]},
+  {applications, [kernel,stdlib,cowboy]},
+  {mod, { webserver_app, []}},
+  {env, []}
+ ]}.
